@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background: url(https://pub-static.fotor.com/assets/bg/ca5fa97f-7696-414b-bc87-9b5205b27575.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 15px 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.login {
+    background: transparent;
+    color: white;
+}
+
+.signup {
+    background: transparent;
+    color: black;
+}
+
+.signup:hover {
+    background: #ff9800;
+    color: white;
+}
+
+.login:hover {
+    background: white;
+    color: black;
+}
+
+/* Welcome Text */
+.welcome-text {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 24px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: black;
+        text-align: center;
+        padding: 10px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}

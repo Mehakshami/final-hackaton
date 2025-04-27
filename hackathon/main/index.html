@@ -1,0 +1,39 @@
+[03:17, 27/04/2025] Mehak: !DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Task Tracker</h1>
+
+  <div class="board">
+    <div class="column" id="todo">
+      <h2>To Do</h2>
+      <input type="text" id="todoInput" placeholder="Enter new task">
+      <button onclick="addTask('todo')">Add Task</button>
+      <div class="task-list"></div>
+    </div>
+
+    <div class="column" id="inProgress">
+      <h2>In Progress</h2>
+      <input type="text" id="inProgressInput" placeholder="Enter new task">
+      <button onclick="addTask('inProgress')">Add Task</button>
+      <div class="task-list"></div>
+    </div>
+
+    <div class="column" id="done">
+      <h2>Done</h2>
+      <input type="text" id="doneInput" placeholder="Enter new task">
+      <button onclick="addTask('done')">Add Task</button>
+      <div class="task-list"></div>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+
+</body>
+</html>
